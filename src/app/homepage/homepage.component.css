@@ -1,0 +1,27 @@
+.page-container {
+    display: flex;
+    height: 100%;
+
+}
+
+.page-content-container {
+
+    page-break-inside: 50px;
+}
+.sidebar {
+    height: 100%;
+    width: 250px;
+    background: grey
+}
+
+.Home {
+
+    font-size: 27px;
+    color: white;
+}
+
+.list {
+
+    font-size: 27px;
+    color: white;
+}
