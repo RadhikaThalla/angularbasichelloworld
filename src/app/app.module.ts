@@ -7,20 +7,20 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { Homepage1Component } from './homepage1/homepage1.component';
 import { ListpageComponent } from './listpage/listpage.component';
 import { TodosService } from './todos.service';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations : [
     AppComponent,
     HomepageComponent,
     Homepage1Component,
     ListpageComponent,
-    TodosService
     ],
   imports: [
     BrowserModule,
@@ -30,9 +30,10 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatListModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
    ],
-  providers: [],
+  providers: [TodosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
