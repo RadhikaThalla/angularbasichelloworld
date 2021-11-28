@@ -15,12 +15,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from "@angular/common/http";
+import { SidenavComponent } from './sidenav/sidenav.component';
 @NgModule({
   declarations : [
     AppComponent,
     HomepageComponent,
     Homepage1Component,
     ListpageComponent,
+    SidenavComponent,
     ],
   imports: [
     BrowserModule,

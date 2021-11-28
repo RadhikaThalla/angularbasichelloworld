@@ -1,0 +1,36 @@
+ <mat-toolbar color="primary" class="example-toolbar"> 
+   <button (click)="sidenav_opened = !sidenav_opened"
+   style="border-radius: px; 
+   box-shadow: 0 8px 16px ">
+   <mat-icon>menu</mat-icon></button>
+    </mat-toolbar>
+    <mat-sidenav-container> 
+    <mat-sidenav [(opened)]="sidenav_opened" #sidenav mode="side">
+      <mat-nav-list>
+  
+       <a mat-list-item> Home </a>
+       <mat-list-item routerLink="/Home"> </mat-list-item>
+       <a mat-list-item> List </a>
+       <mat-list-item routerLink="/List"> </mat-list-item>
+       <a mat-list-item href="http://jsonplaceholder.typicode.com/todos" > APISERVICE </a>
+      
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div style="height: 88vh;">
+        <br>Home
+        <ul>
+          <li>HelloWorld</li>
+        </ul>
+        <br>List
+        <ul>
+          <li>"Christein"</li>
+          <li>"Brett"</li>
+          <li> "Adam"</li>
+        </ul>
+
+  
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
