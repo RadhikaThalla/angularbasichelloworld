@@ -15,7 +15,7 @@ const routes: Routes = [
     {path: 'List', component: ListpageComponent},
     {path: 'Home', component: SidenavComponent},
     {path: 'List', component: SidenavComponent},
-    {path: 'TodosService', component: SidenavComponent},
+    
     
    
   ]}
@@ -24,6 +24,7 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
+
   
   
 })

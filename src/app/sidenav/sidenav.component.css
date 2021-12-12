@@ -1,11 +1,16 @@
-a{
-    text-decoration:  none;
-    color: white;
+*{
+    margin: 0;
+    padding: 0;
 }
-a:hover, a:active{
-    color: lightgray;
+body{
+    font-family: open sans;
 }
-.nav-caption{
-    display: inline-block;
-    padding-left: 6px;
+
+.sidenav{
+    position : fixed;
+    left: 0;
+    top: 0;
+    width: 10hw;
+    height: 100vh;
+    
 }
