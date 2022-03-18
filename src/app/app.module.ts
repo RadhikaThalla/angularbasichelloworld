@@ -16,6 +16,8 @@ import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from "@angular/common/http";
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { Ppp1Component } from './ppp1/ppp1.component';
+import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
   declarations : [
     AppComponent,
@@ -23,6 +25,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     Homepage1Component,
     ListpageComponent,
     SidenavComponent,
+    Ppp1Component,
+
 
     ],
   imports: [
@@ -35,6 +39,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     MatSidenavModule,
     MatIconModule,
     HttpClientModule,
+    MatMenuModule,
   
   
    ],

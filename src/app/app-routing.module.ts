@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { Homepage1Component } from './homepage1/homepage1.component';
 import { ListpageComponent } from './listpage/listpage.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
+import { Ppp1Component } from './ppp1/ppp1.component';
 
 
 const routes: Routes = [
@@ -13,8 +13,8 @@ const routes: Routes = [
     
     {path: 'Home', component: Homepage1Component},
     {path: 'List', component: ListpageComponent},
-    {path: 'Home', component: SidenavComponent},
-    {path: 'List', component: SidenavComponent},
+    {path: 'ppp1',component: Ppp1Component},
+    
     
     
    

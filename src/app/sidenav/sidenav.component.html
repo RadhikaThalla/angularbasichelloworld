@@ -1,20 +1,23 @@
-<mat-toolbar color="primary" class="example-toolbar"> 
+<mat-toolbar color="primary" class="exampl-toolbar"> 
    <button (click)="sidenav_opened = !sidenav_opened"
-   style="border-radius: px; 
-   box-shadow: 0 8px 16px ">  
-   <mat-icon>menu</mat-icon></button>
-    </mat-toolbar>
+   style="border-radius :px ; box-shadow: 0 8px 16pxA"> 
+   <mat-icon>language</mat-icon></button>
+       <a mat-button routerLink="/Home" >Home</a>
+       <a mat-button routerLink="/List" >List</a>
+       <a mat-button [matMenuTriggerFor]="menu" routerLink="/ppp1">what we do</a>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>RESEARCH</button>
+        </mat-menu>
+           
+           
+</mat-toolbar>
+    
     <mat-sidenav-container> 
     <mat-sidenav [(opened)]="sidenav_opened" #sidenav mode="side">
-      <mat-nav-list>
-        <a mat-list-item routerLink="/Home" >Home</a>
-        <a mat-list-item routerLink="/List" >List</a>
-        
-      </mat-nav-list>
-    </mat-sidenav>
+      </mat-sidenav>
     <mat-sidenav-content>
-      
-      
+    
      <router-outlet></router-outlet>
+     
     </mat-sidenav-content>
   </mat-sidenav-container>
