@@ -17,7 +17,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from "@angular/common/http";
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { Ppp1Component } from './ppp1/ppp1.component';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations : [
     AppComponent,
@@ -26,6 +27,7 @@ import {MatMenuModule} from '@angular/material/menu';
     ListpageComponent,
     SidenavComponent,
     Ppp1Component,
+  
 
 
     ],
@@ -40,10 +42,12 @@ import {MatMenuModule} from '@angular/material/menu';
     MatIconModule,
     HttpClientModule,
     MatMenuModule,
+    MatDialogModule
   
   
    ],
   providers: [TodosService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[]
 })
 export class AppModule { }
