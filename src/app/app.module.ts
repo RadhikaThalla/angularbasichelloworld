@@ -19,6 +19,10 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { Ppp1Component } from './ppp1/ppp1.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { DialogboxComponent } from './dialogbox/dialogbox.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+
 @NgModule({
   declarations : [
     AppComponent,
@@ -27,8 +31,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     ListpageComponent,
     SidenavComponent,
     Ppp1Component,
+    DialogboxComponent,
+    AboutusComponent
   
-
 
     ],
   imports: [
@@ -42,7 +47,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatIconModule,
     HttpClientModule,
     MatMenuModule,
-    MatDialogModule
+    MatDialogModule,
+    MatExpansionModule
+
   
   
    ],

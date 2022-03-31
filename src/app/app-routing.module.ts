@@ -5,7 +5,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { Homepage1Component } from './homepage1/homepage1.component';
 import { ListpageComponent } from './listpage/listpage.component';
 import { Ppp1Component } from './ppp1/ppp1.component';
-
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 const routes: Routes = [
 
@@ -14,6 +14,8 @@ const routes: Routes = [
     {path: 'Home', component: Homepage1Component},
     {path: 'List', component: ListpageComponent},
     {path: 'ppp1',component: Ppp1Component},
+    {path: 'aboutus',component: AboutusComponent},
+    
     
     
     
