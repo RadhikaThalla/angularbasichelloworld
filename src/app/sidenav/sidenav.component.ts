@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { DialogboxComponent } from '../dialogbox/dialogbox.component';
 
 
 @Component({
@@ -10,12 +11,14 @@ import { Component, OnInit } from '@angular/core';
 export class SidenavComponent implements OnInit {
    sidenav_opened=true; 
    
- 
-   constructor(
-     
-     ){}
- 
-  
+  constructor(private dialog : MatDialog){
+
+  }
+   openDialog() {
+    this.dialog.open(DialogboxComponent, {
+    
+    });
+  }
   ngOnInit(): void {
     
 }

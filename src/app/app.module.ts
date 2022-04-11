@@ -17,7 +17,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from "@angular/common/http";
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { Ppp1Component } from './ppp1/ppp1.component';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { DialogboxComponent } from './dialogbox/dialogbox.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { LoginComponent } from './login/login.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+
+
 @NgModule({
   declarations : [
     AppComponent,
@@ -26,7 +36,10 @@ import {MatMenuModule} from '@angular/material/menu';
     ListpageComponent,
     SidenavComponent,
     Ppp1Component,
-
+    DialogboxComponent,
+    AboutusComponent,
+    LoginComponent
+  
 
     ],
   imports: [
@@ -40,10 +53,18 @@ import {MatMenuModule} from '@angular/material/menu';
     MatIconModule,
     HttpClientModule,
     MatMenuModule,
+    MatDialogModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule
+    
+
   
   
    ],
   providers: [TodosService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[]
 })
 export class AppModule { }

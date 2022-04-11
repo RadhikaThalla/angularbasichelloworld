@@ -5,19 +5,21 @@
        <a mat-button routerLink="/Home" >Home</a>
        <a mat-button routerLink="/List" >List</a>
        <a mat-button [matMenuTriggerFor]="menu" routerLink="/ppp1">what we do</a>
+       <mat-icon > arrow_drop_down</mat-icon>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item>RESEARCH</button>
-        </mat-menu>
-           
-           
+          <!-- using dialogbox example -->
+          <button mat-button (click)="openDialog()">RESEARCH</button>
+          </mat-menu>
+       <a mat-button routerLink="/aboutus">Aboutus</a>
+       <a mat-button routerLink="/Login"> <mat-icon >login</mat-icon>Login</a>
 </mat-toolbar>
     
-    <mat-sidenav-container> 
-    <mat-sidenav [(opened)]="sidenav_opened" #sidenav mode="side">
-      </mat-sidenav>
-    <mat-sidenav-content>
-    
-     <router-outlet></router-outlet>
-     
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+<mat-sidenav-container> 
+  <mat-sidenav [(opened)]="sidenav_opened" #sidenav mode="side">
+    </mat-sidenav>
+  <mat-sidenav-content>
+  
+   <router-outlet></router-outlet>
+   
+  </mat-sidenav-content>
+</mat-sidenav-container>

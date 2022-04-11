@@ -1,0 +1,18 @@
+<div class="content">
+    <h1>loginworks</h1>
+    <!-- creating with (<form> element)-->
+        <form [formGroup]="loginForm">
+            <mat-form-field>
+                <!--use inputfield and giveit to directive (mat Inputfield) as well-->
+                <input matInput placeholder="Email address" formControlName="email" >
+            </mat-form-field>
+            <mat-form-field>
+                <!--using 'type:password'(becz.,hiding from users)-->
+                <input matInput placeholder="Password" formControlName="Password" type="password" >
+            </mat-form-field>
+            <div class="center margin-top"><!--its a data class='classname'-->
+                <button mat-raised-button color="primary" type="submit">Login</button>
+            </div>
+            <span class="center margin-top">New to our platform? <a  class="sign-up-link"routerLink="sign-up">sign Up!</a></span>
+        </form>
+</div> 
